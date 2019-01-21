@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth" />
+        <module name="demo" />
+        <module name="framework" />
+        <module name="login" />
+        <module name="taglib" />
+        <module name="users" />
+        <module name="util" />
+        <module name="web-autocode" />
+        <module name="web-view" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth" target="1.5" />
+      <module name="demo" target="1.5" />
+      <module name="framework" target="1.5" />
+      <module name="login" target="1.5" />
+      <module name="osframe" target="1.5" />
+      <module name="taglib" target="1.5" />
+      <module name="users" target="1.5" />
+      <module name="util" target="1.5" />
+      <module name="web-autocode" target="1.5" />
+      <module name="web-view" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
