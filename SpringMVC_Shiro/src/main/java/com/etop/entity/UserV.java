@@ -8,7 +8,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "user")
-public class UserV2 {
+public class UserV {
 
     private Integer id;
 
