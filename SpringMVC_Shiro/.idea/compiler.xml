@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringMVC_Shiro" />
+        <module name="IShareServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringMVC_Shiro" target="1.7" />
+      <module name="IShareServer" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
