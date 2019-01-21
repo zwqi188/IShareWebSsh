@@ -1,12 +1,10 @@
-package com.etop.pojo;
+package com.etop.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * 网页过滤信息类，保存网页过滤信息，以及对应的权限(一对一)或角色(一对一)
- * <p/>
- * Created by Jeremie on 2014/10/1.
  */
 @Entity
 @Table(name = "t_function")

@@ -50,7 +50,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <list>
-                <value>com.etop.pojo</value>
+                <value>com.etop.entity</value>
             </list>
         </property>
         <property name="hibernateProperties">

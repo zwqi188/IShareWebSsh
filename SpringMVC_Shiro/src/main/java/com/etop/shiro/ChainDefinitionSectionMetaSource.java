@@ -1,6 +1,6 @@
 package com.etop.shiro;
 
-import com.etop.pojo.Function;
+import com.etop.entity.Function;
 import com.etop.service.FunctionService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.config.Ini;
@@ -12,8 +12,6 @@ import java.util.List;
 
 /**
  * 产生责任链，确定每个url的访问权限
- *
- * Created by Jeremie on 2014/10/1.
  */
 public class ChainDefinitionSectionMetaSource implements FactoryBean<Ini.Section> {
 

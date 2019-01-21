@@ -1,12 +1,13 @@
 package com.etop.dao;
 
-import com.etop.basic.dao.BaseDAO;
-import com.etop.pojo.User;
-import org.springframework.stereotype.Repository;
+import com.etop.entity.User;
+
+import java.util.List;
 
 /**
- * Created by Jeremie on 2014/9/30.
+ * Created by apple on 19/1/21.
  */
-@Repository("UserDAO")
-public class UserDAO extends BaseDAO<User> {
+public interface UserDao {
+
+    List<User> findAll();
 }

@@ -1,4 +1,4 @@
-package com.etop.basic.controller;
+package com.etop.controller;
 
 import com.etop.utils.DateUtils;
 import org.apache.log4j.Logger;
@@ -12,9 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.beans.PropertyEditorSupport;
 import java.util.Date;
 
-/**
- * Created by Jeremie on 14-2-12.
- */
 
 public abstract class BaseController {
 

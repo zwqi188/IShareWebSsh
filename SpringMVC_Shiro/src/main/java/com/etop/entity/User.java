@@ -1,4 +1,4 @@
-package com.etop.pojo;
+package com.etop.entity;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -9,13 +9,9 @@ import java.util.Set;
 
 /**
  * 用户类，保存用户信息与角色（多对多）
- * <p/>
- * Created by Jeremie on 2014/10/1.
  */
-
-@Entity
-@Table(name = "t_user")
-public class User implements Serializable {
+ @Table(name = "t_user")
+ public class User implements Serializable {
 
     private Integer id;
     @NotEmpty(message = "用户名不能为空")

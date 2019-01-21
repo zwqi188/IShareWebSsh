@@ -1,4 +1,4 @@
-package com.etop.basic.dao;
+package com.etop.dao.Impl;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Query;
@@ -14,9 +14,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Jeremie on 14-2-12.
- */
 public class BaseDAO<T> implements Serializable {
 
     protected transient Logger log = Logger.getLogger(this.getClass());
@@ -47,6 +44,9 @@ public class BaseDAO<T> implements Serializable {
     public void evict(T entity) {
         getSession().evict(entity);
     }
+
+
+
 
     public T get(long id) throws DataAccessException {
         log.debug("DAO:Get entity " + getCurClass().getSimpleName() + ":Id=" + id);

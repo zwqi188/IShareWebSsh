@@ -10,8 +10,6 @@ import java.util.Date;
 
 /**
  * 比较两个日期相差的月份数
- *
- * @author Pengo.Wen
  */
 public class DateUtils extends org.apache.commons.lang.time.DateUtils{
 

@@ -1,12 +1,10 @@
-package com.etop.pojo;
+package com.etop.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * 权限类，保存权限信息与对应的角色（多对一）
- * <p/>
- * Created by Jeremie on 2014/10/1.
  */
 
 @Entity

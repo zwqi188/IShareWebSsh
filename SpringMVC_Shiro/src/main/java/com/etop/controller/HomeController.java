@@ -2,36 +2,31 @@ package com.etop.controller;
 
 import javax.validation.Valid;
 
-import com.etop.basic.controller.BaseController;
-import com.etop.service.UserService;
+import com.etop.service.UserServiceV2;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.etop.pojo.User;
+import com.etop.entity.User;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
 /**
  * 处理用户登录登出的控制器
- *
- * Created by Jeremie on 2014/10/3.
  */
 @Controller
 public class HomeController extends BaseController {
 
     @Autowired
-    private UserService userService;
+    private UserServiceV2 userServiceV2;
 
     @RequestMapping(value="/login.html",method=RequestMethod.GET,produces = "text/html; charset=utf-8")
     public String loginForm(Model model,String message){
@@ -51,7 +46,7 @@ public class HomeController extends BaseController {
             //使用shiro管理登录
             SecurityUtils.getSubject().login(new UsernamePasswordToken(user.getUsername(), user.getPassword()));
             //获取所有用户信息，权限由前端shiro标签控制
-            List<User> userList = userService.getAllUser();
+            List<User> userList = userServiceV2.getAllUser();
             model.addAttribute("userList", userList);
             return "/user.jsp";
         } catch (AuthenticationException e) {

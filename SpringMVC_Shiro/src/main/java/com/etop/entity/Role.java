@@ -1,4 +1,4 @@
-package com.etop.pojo;
+package com.etop.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -7,8 +7,6 @@ import java.util.Set;
 
 /**
  * 角色类，用于保存角色信息、用户列表（多对多）与角色（一对多）对应的权限
- * <p/>
- * Created by Jeremie on 2014/10/1.
  */
 
 @Entity
@@ -48,7 +46,7 @@ public class Role implements Serializable {
         this.permissionList = permissionList;
     }
 
-    @ManyToMany(targetEntity = com.etop.pojo.User.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToMany(targetEntity = com.etop.entity.User.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "t_user_role", joinColumns = {@JoinColumn(name = "role_id")}, inverseJoinColumns = {@JoinColumn(name = "user_id")})
     public Set<User> getUserList() {
         return userList;

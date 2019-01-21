@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.etop</groupId>
-    <artifactId>SpringMVC_Shiro</artifactId>
+    <artifactId>IShareServer</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 

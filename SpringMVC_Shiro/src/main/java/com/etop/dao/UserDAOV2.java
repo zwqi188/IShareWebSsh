@@ -1,9 +1,9 @@
 package com.etop.dao;
 
 import com.etop.dao.Impl.BaseDAO;
-import com.etop.entity.Role;
+import com.etop.entity.User;
 import org.springframework.stereotype.Repository;
 
-@Repository("RoleDAO")
-public class RoleDAO extends BaseDAO<Role> {
+@Repository("UserDAO")
+public class UserDAOV2 extends BaseDAO<User> {
 }
