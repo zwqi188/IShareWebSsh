@@ -29,10 +29,10 @@ CREATE TABLE `t_user` (
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('1', 'sam', '670b14728ad9902aecba32e22fa4f6bd');
-INSERT INTO `t_user` VALUES ('2', 'ding', '670b14728ad9902aecba32e22fa4f6bd');
-INSERT INTO `t_user` VALUES ('3', 'baoseed', '670b14728ad9902aecba32e22fa4f6bd');
-INSERT INTO `t_user` VALUES ('4', 'jeremie', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `t_user` VALUES ('1', 'sam', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `t_user` VALUES ('2', 'ding', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `t_user` VALUES ('3', 'baoseed', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `t_user` VALUES ('4', 'jeremie', '123456');
 
 -- ----------------------------
 -- Table structure for `t_permission`
